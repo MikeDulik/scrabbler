@@ -19,7 +19,10 @@ class ScrabbleWord
 
   #method for returning word score value
   def score
-    @word.each_char do |i|
+    # @word.each_char do |i|
+    #   @score = @score + SCOREBOX[:i]
+    # end
+    @word.split("").each do |i|
       @score = @score + SCOREBOX[:i]
     end
     return @score
